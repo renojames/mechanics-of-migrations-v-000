@@ -1,4 +1,4 @@
-class AddFavoriteFoodToArtists < ActiveRecord::Migration
+class AddFavoriteFoodToArtists < ActiveRecord::Migration[4.2]
 
   def up
   end
