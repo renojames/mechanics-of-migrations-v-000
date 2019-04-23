@@ -11,19 +11,19 @@ Bundler.require
 
 ActiveRecord::Base.establish_connection(
   :adapter => "sqlite3",
-  :database => "bd/artists.sqlite"
+  :database => "db/artists.sqlite"
 )
 
-sql = <<-SQL
-  CREATE TABLE IF NOT EXISTS artists (
-    id INTEGER PRIMARY KEY,
-    name TEXT,
-    genre TEXT,
-    age INTEGER,
-    hometown TEXT
-  )
-SQL
+#sql = <<-SQL
+#  CREATE TABLE IF NOT EXISTS artists (
+#    id INTEGER PRIMARY KEY,
+#    name TEXT,
+#    genre TEXT,
+#    age INTEGER,
+#    hometown TEXT
+#  )
+#SQL
 
-ActiveRecord::Base.connection.execute(sql)
+#ActiveRecord::Base.connection.execute(sql)
 
 require_relative "../artist.rb"
